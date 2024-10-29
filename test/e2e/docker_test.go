@@ -618,7 +618,7 @@ func TestDockerKubernetes131AirgappedRegistryMirrorAndCert(t *testing.T) {
 		t,
 		framework.NewDocker(t),
 		framework.WithClusterFiller(api.WithExternalEtcdTopology(1)),
-		framework.WithClusterFiller(api.WithKubernetesVersion(v1alpha1.Kube131)),
+		framework.WithClusterFiller(api.WithKubernetesVersion(v1alpha1.Kube130)),
 		framework.WithRegistryMirrorEndpointAndCert(constants.DockerProviderName),
 	)
 	runDockerAirgapConfigFlow(test)
